@@ -1,0 +1,24 @@
+{% schema %}
+  {
+    "name": "Custom Content",
+    "settings": [
+      {
+        "type": "text",
+        "label": "Custom Message",
+        "id": "custom_message",
+        "default": "Hello: Codeflies Technologies Pvt. Ltd  this is Dynamic Text"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Default",
+        "category": "Custom"
+      }
+    ]
+  }
+{% endschema %}
+
+<div class="custom-content">
+  <h1>{{ section.settings.custom_message }}</h1>
+</div>
+
